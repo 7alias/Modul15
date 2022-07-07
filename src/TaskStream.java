@@ -56,12 +56,11 @@ public class TaskStream {
         и посчитайте сумму полученных чисел.
         В ответе у вас должно выйти 2275.
          */
-        int n = 100;
-        int result =
-                IntStream.rangeClosed(51, n)
-                        .filter(i -> i % 2 == 0 || i % 5 == 0).sum();
 
-        System.out.println(result);
+
+
+        System.out.println(IntStream.rangeClosed(51, 100)
+                .filter(i -> i % 2 == 0 || i % 5 == 0).sum());
 
     }
 
